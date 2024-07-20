@@ -17,6 +17,11 @@ const Contact = () => {
                     <div className="i-do hd">
                         <h1 className="head">GET IN TOUCH</h1>
                     </div>
+                    <div className="link">
+                        <a href="https://www.linkedin.com/in/ram795/" target='_blank'><i className="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/ram7909" target='_blank'><i className="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/_ram_795/?hl=en" target='_blank'><i className="fa-brands fa-instagram"></i></a>
+                    </div>
                     <form>
                         <div className="first">
                             <input type="text" placeholder='Enter Full Name' />

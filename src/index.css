@@ -391,3 +391,11 @@ input{
     color: white;
     cursor: pointer;
 }
+.contact .link{
+    display: flex;
+    align-items: center;
+}
+.contact-details .link a i{
+    border: none;
+    padding: 0px;
+}

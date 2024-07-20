@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Signika+Negative:wght@300..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    font-family: "Signika Negative", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.main {
+    background-color: rgb(233, 233, 233);
+    color: black;
+    width: 400px;
+    margin-bottom: 45px;
+}
+.btm {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+}
+.btm-btn{
+    box-sizing: border-box;
+    width: 100%;
+    border-top: 4px solid #009BDE;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0px 0px 2px 0px;
+}
+.btm-btn a{
+    text-decoration: none;
+    color: black;
+    padding:10px;
+    transition: background-color 0.5s, color 0.5s;
+    scroll-behavior: smooth;
+}
+.btm-btn a:hover{
+    background-color:#cccccc;
+    color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.btm-btn a.active{
+    background-color: #009BDE;
+    color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.background-img {
+    background-image: url('/public/Profile3.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.background-img .text-area {
+    position: absolute;
+    height: 92.2vh;
+    width: 100%;
+}
+
+.text-area {
+    box-sizing: border-box;
+    padding: 0px 20px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.text-area .hi {
+    color: #1c1c1c;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.text-area .name {
+    color: #009BDE;
+    font-weight: 950;
+    font-size: 27px;
+}
+
+.text-area .profession {
+    font-weight: 500;
+    color: #343434;
+}
+
+.text-area .links {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.text-area .links a {
+    color: #343434;
+}
+
+.text-area .links a i {
+    font-size: 20px;
+}
+
+.text-area .links a:hover i {
+    color: #009BDE;
+}
+
+.about {
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.heading {
+    font-size: 3rem;
+    color: #009BDE;
+}
+
+.about .abt-me {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 350;
+}
+
+.about .details {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.about .details p span {
+    color: #121212;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.about .details p {
+    color: #646464;
+    font-size: 18px;
+}
+
+.about .details p a {
+    text-decoration: none;
+    color: #646464;
+}
+
+.i-do {
+    margin-top: 85px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.i-do h1 {
+    font-size: 1.7rem;
+}
+
+.i-do .container {
+    box-sizing: border-box;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+    background-color: #cccccc;
+    border-radius: 15px;
+}
+
+.i-do .container i {
+    color: #009BDE;
+    font-size: 2.5rem;
+}
+
+.i-do .container h3 {
+    font-size: 1.4rem;
+    color: #444444;
+    font-weight: 500;
+}
+
+.i-do .container:hover {
+    background-color: #009BDE;
+}
+
+.i-do .container:hover i,
+.i-do .container:hover h3 {
+    color: white;
+}
+
+.portfolio {
+    box-sizing: border-box;
+    margin-top: 15px;
+    padding: 20px;
+}
+
+.portfolio .p-img {
+    background-image: url(/public/Project-1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 26vh;
+    position: relative;
+    margin-top: 30px;
+    border-radius: 7px;
+}
+
+.portfolio .p-img1 {
+    background-image: url(/public/Project-2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 26vh;
+    position: relative;
+    margin-top: 30px;
+    border-radius: 7px;
+}
+
+.portfolio .p-img2 {
+    background-image: url(/public/Project-3.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 26vh;
+    position: relative;
+    margin-top: 30px;
+    border-radius: 7px;
+}
+
+
+
+.portfolio .p-img .container,
+.portfolio .p-img1 .container,
+.portfolio .p-img2 .container {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+    height: 26vh;
+    width: 100%;
+    background-color: rgba(43, 43, 43, 0.6);
+    position: absolute;
+    border-radius: 7px;
+}
+
+.portfolio .p-img .container .link a,
+.portfolio .p-img1 .container .link a,
+.portfolio .p-img2 .container .link a {
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    padding: 10px;
+    border-radius: 100%;
+}
+
+.portfolio .p-img .container p,
+.portfolio .p-img1 .container p,
+.portfolio .p-img2 .container p {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.portfolio .p-img:hover .container,
+.portfolio .p-img1:hover .container,
+.portfolio .p-img2:hover .container {
+    display: flex;
+}
+
+.services{
+    padding: 20px;
+    margin-top: 20px;
+}
+.service{
+    margin-top: 15px;
+}
+.service .container p{
+    text-align: center;
+    color: #444444;
+    font-size: 15px;
+}
+.service .container:hover p{
+    color: black;
+}
+
+.contact{
+    padding: 20px;
+    margin-top: 20px;
+}
+.contact-details{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.contact-details a{
+    text-decoration: none;
+    color: #343434;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: color .5s ease ;
+    padding: 10px;
+    border-radius: 15px;
+}
+.contact-details a i{
+    font-size: 25px;
+    border: 2px solid  #343434;
+    border-radius: 100%;
+    padding: 8px;
+    transition: border .5s ease ;
+}
+.contact-details a:hover{
+    background-color:#cccccc;
+    color: #009BDE;
+}
+.contact-details a:hover i{
+    border: 2px solid #009BDE;
+}
+.hd{
+    margin-top: 20px;
+}
+.hd .head{
+    color: #1c1c1c;
+}
+.contact form{
+    display: flex;
+    align-items:start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+input{
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #009BDE;
+    padding: 10px;
+}
+.contact form .first input{
+    width: 350px;
+}
+.contact form .second{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.contact form .second input{
+    width: 167.5px;
+    gap: 15px;
+}
+.contact form .third textarea{
+    box-sizing: border-box;
+    resize: none;
+    border: none;
+    border-bottom: 2px solid #009BDE;
+    padding: 10px;
+    font-family: "Signika Negative", sans-serif;
+    font-style: normal;
+}
+.contact form button{
+    padding: 10px 15px;
+    font-size: 18px;
+    background-color:#cccccc;
+    border: none;
+    border-radius: 20px;
+    font-family: "Signika Negative", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 600;
+}
+.contact form button:hover{
+    background-color: #009BDE;
+    color: white;
+    cursor: pointer;
+}

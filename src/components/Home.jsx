@@ -23,9 +23,9 @@ const Home = () => {
                 <h2 className="name">RAMCHARAN PATIDAR</h2>
                 <h3 className='profession'>and I'm <span ref={el}></span></h3>
                 <div className="links">
-                    <a href=""><i className="fa-brands fa-linkedin-in"></i></a>
-                    <a href=""><i className="fa-brands fa-github"></i></a>
-                    <a href=""><i className="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/ram795/" target='_blank'><i className="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/ram7909" target='_blank'><i className="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/_ram_795/?hl=en" target='_blank'><i className="fa-brands fa-instagram"></i></a>
                 </div>
             </div>
         </div>
